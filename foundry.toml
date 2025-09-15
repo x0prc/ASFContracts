@@ -1,0 +1,21 @@
+[default]
+src = "contracts"
+out = "out"
+libs = ["lib"]
+test = "test"
+cache_path = "cache"
+script = "scripts"
+
+# forge-std lib
+remappings = ["forge-std/=lib/forge-std/src/"]
+
+# Invariant and Fuzzing
+[invariant]
+runs = 256
+depth = 32
+
+[fuzz]
+runs = 256
+
+# Solidity Compiler
+solc_version = "0.8.13"
